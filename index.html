@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C# Corner Landing Page</title>
+    <title>C# Corner Consulting Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -15,9 +15,9 @@
  <!-- Header -->
     <header class="main-header">
         <div class="container header-flex">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="C# Corner Logo" />
-            </div>
+            </a>
             <div class="contact">
                 <span>Call Us</span>
                 <span class="phone">(888) 855-8444</span>
@@ -34,15 +34,15 @@
             </button></h2>
              
             <ul class="sidebar-menu">
-                <li>Angular Developer</li>
-                <li>React Developer</li>
-                <li>.NET Developer</li>
-                <li>.NET Architect</li>
-                <li>GenAI Consultant</li>
-                <li>Vibe Coder</li>
-                <li>WPF Developer</li>
-                <li>Blockchain Developer</li>
-                <li>Cloud Native Architect</li>
+                <li><a href="detail-page.html">Angular Developer</a></li>
+                <li><a href="detail-page.html">React Developer</a></li>
+                <li><a href="detail-page.html">.NET Developer</a></li>
+                <li><a href="detail-page.html">.NET Architect</a></li>
+                <li><a href="detail-page.html">GenAI Consultant</a></li>
+                <li><a href="detail-page.html">Vibe Coder</a></li>
+                <li><a href="detail-page.html">WPF Developer</a></li>
+                <li><a href="detail-page.html">Blockchain Developer</a></li>
+                <li><a href="detail-page.html">Cloud Native Architect</a></li>
             </ul>
         </aside>
         <main class="content">
@@ -405,7 +405,7 @@
     </div>
 </div>
 
-<!-- Place this before </body> -->
+
 <script>
 // Open popup only for the hero "Hire Developers" button
 document.querySelector('#HereDevelopers').addEventListener('click', function(e) {
@@ -419,8 +419,6 @@ window.addEventListener('click', function(e) {
     const popup = document.getElementById('hire-popup');
     if (e.target === popup) popup.style.display = 'none';
 });
-
-// ...existing popup code...
 
 // Sidebar responsive toggle
 const sidebar = document.querySelector('.sidebar');

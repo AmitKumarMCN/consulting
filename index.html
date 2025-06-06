@@ -57,8 +57,8 @@
                             We deliver <span class="txthighlight">pre-vetted, high-quality developers</span> who code with precision and purpose.
                         </p>
                         <div class="hero-actions">
-                            <a href="#" class="cta-button" id="HereDevelopers">Hire Developers</a>
-                            <a href="#contact" class="cta-button gradient-button">Get in Touch</a>
+                            <a href="https://www.c-sharpcorner.com/contactus.aspx" class="cta-button" id="HereDevelopers">Hire Developers</a>
+<!--                             <a href="https://www.c-sharpcorner.com/contactus.aspx" class="cta-button gradient-button">Get in Touch</a> -->
                         </div>
                     </div>
                 </section>
@@ -313,13 +313,20 @@
             </div>
         </div>
     </div>
+    
+    <p class="contact-subtitle">
+        Ready to transform your business? Contact our team of experts today to schedule a consultation.
+        </p>
+     <a href="https://www.c-sharpcorner.com/contactus.aspx" class="cta-button gradient-button">Get in Touch</a>
+        
 </section>
 <!-- Contact Section -->
-<section class="contact-section" id="contact">
+<section class="contact-section" id="contact" style="display:nnoe">
     <h2 class="heading-title">Get in Touch</h2>
     <p class="contact-subtitle">
         Ready to transform your business? Contact our team of experts today to schedule a consultation.
     </p>
+     <a href="https://www.c-sharpcorner.com/contactus.aspx" class="cta-button gradient-button">Get in Touch</a>
     <div class="contact-container">
         <div class="contact-info">
             <h3>Contact Information</h3>
@@ -407,18 +414,18 @@
 
 
 <script>
-// Open popup only for the hero "Hire Developers" button
-document.querySelector('#HereDevelopers').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.getElementById('hire-popup').style.display = 'flex';
-});
-document.getElementById('close-popup').addEventListener('click', function() {
-    document.getElementById('hire-popup').style.display = 'none';
-});
-window.addEventListener('click', function(e) {
-    const popup = document.getElementById('hire-popup');
-    if (e.target === popup) popup.style.display = 'none';
-});
+ // Open popup only for the hero "Hire Developers" button
+// document.querySelector('#HereDevelopers').addEventListener('click', function(e) {
+//     e.preventDefault();
+//     document.getElementById('hire-popup').style.display = 'flex';
+// });
+// document.getElementById('close-popup').addEventListener('click', function() {
+//     document.getElementById('hire-popup').style.display = 'none';
+// });
+// window.addEventListener('click', function(e) {
+//     const popup = document.getElementById('hire-popup');
+//     if (e.target === popup) popup.style.display = 'none';
+// });
 
 // Sidebar responsive toggle
 const sidebar = document.querySelector('.sidebar');
